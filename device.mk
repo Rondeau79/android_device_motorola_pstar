@@ -46,3 +46,7 @@ PRODUCT_PACKAGES += \
 
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/pstar/pstar-vendor.mk)
+
+# Viper4Android
+$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+
