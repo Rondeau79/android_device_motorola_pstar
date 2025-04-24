@@ -15,7 +15,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     FrameworksResPstar \
     SystemUIResPstar \
-    SettingsProviderResPstar
+    SettingsProviderResPstar \
+    $(LOCAL_PATH)/overlay-evolution
 
 # Audio
 PRODUCT_COPY_FILES += \
