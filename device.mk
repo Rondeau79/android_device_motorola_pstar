@@ -35,6 +35,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.device.rc
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_sysfs,enable_af,true)
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml
@@ -42,7 +45,6 @@ PRODUCT_COPY_FILES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.st \
-    android.hardware.secure_element@1.2-service.st \
     nfc_nci.st21nfc.default
 
 # Get non-open-source specific aspects
