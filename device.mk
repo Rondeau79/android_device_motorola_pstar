@@ -45,6 +45,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.st
 
+# PixelParts
+include packages/apps/PixelParts/device.mk  
+
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/motorola/pstar/pstar-vendor.mk)
 
